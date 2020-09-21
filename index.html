@@ -1,1 +1,37 @@
 <p id="Front Page"></p>
+<html>
+  <body>
+    <h><b>Username: </b></h1>
+    <input type="text" placeholder="username" id="username">
+    <br>
+    <br>
+    <h><b>Password: </b></h1>
+    <input type="text" placeholder="password" id="password">
+    <br>
+    <br>
+    <br>
+    <button type="button" onclick="getInputValue();">Submit</button>
+    <script src="HashFunction.js"></script>
+    <script src="stor.js"></script>
+    <script>
+      function getInputValue()
+      {
+        if hash(document.getElementById("username").value , 256) == UsernameA)
+        {
+          if hash(document.getElementById("password").value , 256) == PasswordA)
+          {
+            alert("Correct");
+          }
+          else
+          {
+            alert("Incorrect Password");
+          }
+        }
+        else
+        {
+          alert("Incorrect Username");
+        }
+      }
+    </script>
+  </body>
+</html>
